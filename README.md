@@ -1,5 +1,13 @@
 # hubot-hipchat
 
+## Deploy
+
+Since we're deploying a subdirectory:
+
+```
+git subtree push --prefix hawbot heroku master
+```
+
 ## Quickstart: Hubot for HipChat on Heroku
 
 This is a HipChat-specific version of the more general [instructions in the Hubot wiki](https://github.com/github/hubot/wiki/Deploying-Hubot-onto-Heroku).
