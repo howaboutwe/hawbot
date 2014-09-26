@@ -211,6 +211,11 @@ module.exports = (robot) ->
     else
       msg.send "I'm sorry, a game is already in progress"
 
+  robot.respond /end wof game/i, (msg) ->
+    end_game(msg)
+    msg.send "Game ended!"
+
+
   # allow people to check to see whose turn it is
   robot.respond /wof turn/i, (msg) ->
     if (player_array.length == 0)
